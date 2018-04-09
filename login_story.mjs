@@ -27,8 +27,8 @@ export default class LoginStory extends Story{
     let driver= new webdriver.Builder().forBrowser("chrome").build();
     const msg_url='https://everdoc.github.io/hellojs/quize/login.html';
     driver.get(msg_url);
-    //driver.wait(webdriver.until.urlIs(msg_url), 1000*10)
-    //.then((success)=>{
+    driver.wait(webdriver.until.urlIs(msg_url), 1000*10)
+    .then((success)=>{
 
         //send the username and password to the TextField
          driver.findElement(webdriver.By.id('name')).sendKeys(this.username);
@@ -43,12 +43,12 @@ export default class LoginStory extends Story{
             driver.quit();             
             }
          );
-         //},
+         },
          (reason)=>{
              // do nothing
              console.log(reason);
              driver.quit();
      }
-    //);    
+    );    
     }
 }
