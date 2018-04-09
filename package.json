@@ -1,0 +1,19 @@
+{
+  "name": "vscworkspace",
+  "version": "1.0.0",
+  "description": "hello javascript",
+  "main": "login_successfully.mjs",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "--experimental-modules login_successfully.mjs"
+  },
+  "keywords": [
+    "js",
+    "node"
+  ],
+  "author": "yajunzhao",
+  "license": "ISC"
+}
